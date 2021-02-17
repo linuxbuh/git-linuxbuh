@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "Введите репозиторий для клонирования:" varname
+
+rm -r $varname
+
+git clone https://github.com/linuxbuh/$varname.git

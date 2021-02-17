@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rmdir -p linuxbuh-1c-installer
+
+git clone https://github.com/linuxbuh/linuxbuh-1c-installer.git

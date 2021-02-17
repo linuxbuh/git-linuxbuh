@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -p "Введите репозиторий:" reponame
+read -p "Введите имя пользователя репозитория:" repouser
+read -p "Введите пароль к репозиторию:" repopass
+
+echo "Репозиторий $reponame, пользователь $repouser"
+
+cd ./$reponame
+
+git add .
+
+read -p "Введите текст коммита:" committext
+
+git commit -m "$committext"
+
+git push https://$repouser:$repopass@github.com/$repouser/$reponame.git
