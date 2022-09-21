@@ -1,1 +1,1 @@
-# git-linuxbuh
+# git-linuxbuh - скрипты для GIT
